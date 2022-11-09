@@ -1,0 +1,12 @@
+{
+    "name": "Prevent selection on contextmenu for mac",
+    "description": "macで右クリック時単語を選択させない",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["main.js"]
+        }
+    ]
+}
